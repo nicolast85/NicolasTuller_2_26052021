@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
         <!--Encodage-->
+        <meta charset="utf-8">
+        <!--Lien vers icones Font Awesome-->
+        <script src="https://kit.fontawesome.com/4fc2a5c12f.js" crossorigin="anonymous"></script>
         <title>Reservia</title>
         <!--Titre de l'onglet-->
     </head>
@@ -11,77 +13,253 @@
             <header>
                 <div>
                 <!--Entête-->
-                    <div>
+                    <div id="logo">
                     <!--Logo-->
+                        <img src="images/logo/Reservia@3x.png" alt="logo">
                     </div>
-                    <nav>
+                    <nav id="menu">
                     <!--Menu-->
+                        <!--Ancres-->
                         <div>
-                            <a href="#hebergement">hébergements</a>
+                            <a href="#hebergements">Hébergements</a>
                         </div>
                         <div>
                             <a href="#activite">Activités</a>
                         </div>
                     </nav>
-                    <div>
+                    <div id="inscription">
                     <!--Inscription-->
-                            <a href="#inscription">S'inscrire</a>
+                            <a href="#">S'inscrire</a>
                     </div>
                 </div>
-                <div><strong>Trouvez votre hébergement pour des vaccances ce rêve</strong><br >
-                    <p>En plein centre ville ou en pleine nature</p>
-                <!--Recherche-->
-                </div>
+                <div class="recherche">
+                <!--recherche-->
+                    <div>
+                        <strong>Trouvez votre hébergement pour des vaccances ce rêve</strong><br >
+                        <div>En plein centre ville ou en pleine nature</div>
+                    </div>
+                <form method="post" action="traitement.php"
+                    <div class="bloc_recherche">
+                            <div class="position_map">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="formulaire">
+                            <input type="search" name="recherche" placeholder="Marseille, France">
+                            </div>
+                        <div class="bouton">
+                        <a href="#">Rechercher</a>
+                        </div>
+                    </div>
+                </form>
                 <div>
                 <!--Filtres-->
-                <p><strong>Filtres</strong></p>
+                    <p><strong>Filtres</strong></p>
+                    <div>
+                        <!--fa-stack : superposition d'icones; 2x celui du fond et 1x  par dessus-->
+                        <span class="fa-stack fa-2x">
+                        <i class="fas fa-circle fa-stack-2x" style="color: #DEEBFF;"></i>
+                        <i class="fas fa-money-bill-wave fa-stack-1x" style="color: #0065FC;"></i>
+                        </span>
+                        <a href="#">Économique</a>
+                    </div>
+                    <div>
+                        <span class="fa-stack fa-2x">
+                        <i class="fas fa-circle fa-stack-2x" style="color: #DEEBFF;"></i>
+                        <i class="fas fa-child fa-stack-1x" style="color: #0065FC;"></i>
+                        </span>
+                        <a href="#">Familial</a>
+                    </div>
+                    <div>
+                        <span class="fa-stack fa-2x">
+                        <i class="fas fa-circle fa-stack-2x" style="color: #DEEBFF;"></i>
+                        <i class="fas fa-heart fa-stack-1x" style="color: #0065FC;"></i>
+                        </span>
+                        <a href="#">Romantique</a>
+                    </div>
+                    <div>
+                        <span class="fa-stack fa-2x">
+                        <i class="fas fa-circle fa-stack-2x" style="color: #DEEBFF;"></i>
+                        <i class="fas fa-dog fa-stack-1x" style="color: #0065FC;"></i>
+                        </span>
+                        <a href="#">Animaux autorisés</a>
+                    </div>
                 </div>
                 <div>
-                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                    <span class="fa-stack fa-2x">
+                    <i class="fas fa-circle fa-stack-2x" style="color: #FFFFFF;"></i>
+                    <i class="fas fa-info fa-stack-1x" style="color: #0065FC;"></i>
+                    </span>
+                    Plus de 500 logements sont disponibles dans cette ville
+                    </div>
                 </div>
             </header>
             <section>
                 <div>
                 <!--hebergements à Marseille-->
-                <h2>Hébergement à Marseille</h2>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                <h2 id="hebergements">Hébergement à Marseille</h2>
+                    <div>
+                        <p>
+                            <img src="images/hebergements/auberge_la_cannebiere.jpg" alt="Photo Auberge de la Cannebière">
+                        </p>
+                        <strong>Auberge la Cannebière</strong>
+                        Nuit à partir de <strong>25€</strong>
+                        <span class="blue star">
+                            <i class="fas fa-star" style="color: #0065FC;"></i>
+                            <i class="fas fa-star" style="color: #0065FC;"></i>
+                            <i class="fas fa-star" style="color: #0065FC;"></i>
+                            <i class="fas fa-star" style="color: #0065FC;"></i>
+                        </span>
+                        <span class="grey star">
+                            <i class="fas fa-star" style="color: #F2F2F2;"></i>
+                        </span>
+                    </div>
+                    <div><strong>Hôtel du port</strong>
+                        Nuit à partir de <strong>52€</strong>
+                        <span class="blue star">
+                            <i class="fas fa-star" style="color: #0065FC;"></i>
+                            <i class="fas fa-star" style="color: #0065FC;"></i>
+                            <i class="fas fa-star" style="color: #0065FC;"></i>
+                            <i class="fas fa-star" style="color: #0065FC;"></i>
+                            <i class="fas fa-star" style="color: #0065FC;"></i>
+                        </span>
+                    </div>
+                    <div><strong>Hôtel les mouettes</strong>
+                        Nuit à partir de <strong>76€</strong>
+                        <span class="blue star">
+                            <i class="fas fa-star" style="color: #0065FC;"></i>
+                            <i class="fas fa-star" style="color: #0065FC;"></i>
+                            <i class="fas fa-star" style="color: #0065FC;"></i>
+                            <i class="fas fa-star" style="color: #0065FC;"></i>
+                        </span>
+                        <span class="grey star">
+                            <i class="fas fa-star" style="color: #F2F2F2;"></i>
+                        </span>
+                    </div>
+                    <div><strong>Hôtel de la mer</strong>
+                        Nuit à partir de <strong>46€</strong>
+                        <span class="blue star">
+                            <i class="fas fa-star" style="color: #0065FC;"></i>
+                            <i class="fas fa-star" style="color: #0065FC;"></i>
+                            <i class="fas fa-star" style="color: #0065FC;"></i>
+                        </span>
+                        <span class="grey star">
+                            <i class="fas fa-star" style="color: #F2F2F2;"></i>
+                            <i class="fas fa-star" style="color: #F2F2F2;"></i>
+                        </span>
+                    </div>
+                    <div><strong>Auberge le Panier</strong>
+                        Nuit à partir de <strong>23€</strong>
+                        <span class="blue star">
+                            <i class="fas fa-star" style="color: #0065FC;"></i>
+                            <i class="fas fa-star" style="color: #0065FC;"></i>
+                            <i class="fas fa-star" style="color: #0065FC;"></i>
+                            <i class="fas fa-star" style="color: #0065FC;"></i>
+                        </span>
+                        <span class="grey star">
+                            <i class="fas fa-star" style="color: #F2F2F2;"></i>
+                        </span>
+                    </div>
+                    <div><strong>Hôtel chez Amina</strong>
+                        Nuit à partir de <strong>96€</strong>
+                        <span class="blue star">
+                            <i class="fas fa-star" style="color: #0065FC;"></i>
+                            <i class="fas fa-star" style="color: #0065FC;"></i>
+                            <i class="fas fa-star" style="color: #0065FC;"></i>
+                            <i class="fas fa-star" style="color: #0065FC;"></i>
+                            <i class="fas fa-star" style="color: #0065FC;"></i>
+                        </span>
+                    </div>
+                    <div>
+                        <a href="#">Afficher plus</a>
+                    </div>
                 </div>
                 <!--Les plus populaires-->
-                <h2>les plus populaires</h2> 
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                <h2>Les plus populaires</h2> 
+                    <i class="fas fa-chart-line" style="color: #000;"></i>
+                    <div><strong>Hôtel Le Soleil du matin</strong>
+                        Nuit à partir de <strong>128€</strong>
+                        <span class="blue star">
+                            <i class="fas fa-star" style="color: #0065FC;"></i>
+                            <i class="fas fa-star" style="color: #0065FC;"></i>
+                            <i class="fas fa-star" style="color: #0065FC;"></i>
+                            <i class="fas fa-star" style="color: #0065FC;"></i>
+                            <i class="fas fa-star" style="color: #0065FC;"></i>
+                        </span>
+                    </div>
+                    <div><strong>Au coeur de l'eau Chambres d'hôtes</strong>
+                        Nuit à partir de <strong>71€</strong>
+                        <span class="blue star">
+                            <i class="fas fa-star" style="color: #0065FC;"></i>
+                            <i class="fas fa-star" style="color: #0065FC;"></i>
+                            <i class="fas fa-star" style="color: #0065FC;"></i>
+                            <i class="fas fa-star" style="color: #0065FC;"></i>
+                        </span>
+                        <span class="grey star">
+                            <i class="fas fa-star" style="color: #F2F2F2;"></i>
+                        </span>
+                    </div>
+                    <div><strong>Hôtel Tout bleu et Blanc</strong>
+                        Nuit à partir de <strong>68€</strong>
+                        <span class="blue star">
+                            <i class="fas fa-star" style="color: #0065FC;"></i>
+                            <i class="fas fa-star" style="color: #0065FC;"></i>
+                            <i class="fas fa-star" style="color: #0065FC;"></i>
+                            <i class="fas fa-star" style="color: #0065FC;"></i>
+                        </span>
+                        <span class="grey star">
+                            <i class="fas fa-star" style="color: #F2F2F2;"></i>
+                        </span>
+                    </div>
             </section>
             <section>
-                <h2>Activités à Marseille</h2>
+                <h2 id="activite">Activités à Marseille</h2>
             <!--Activités à Marseille-->
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+                <div><strong>Vieux Port</strong></div>
+                <div><strong>Fort de Pomègues</strong></div>
+                <div><strong>Îles du Frioul</strong></div>
+                <div><strong>Parc National des Calanques</strong></div>
+                <div><strong>Notre-Dame-de-la-Garde</strong></div>
+                <div><strong>Parc Longchamp</strong></div>
             </section>
             <footer>
                 <div>
                     <p><strong>A propos</strong></p>
                 <!--A propos-->
-                    <nav></nav>
+                    <nav>
+                        <p>
+                            <a href="#">Fonctionnement du site></a>
+                        </p>
+                        <p>
+                            <a href="#">Conditions générales de vente</a>
+                        </p>
+                        <p>
+                            <a href="#">Données et confidentialité</a>
+                        </p>
+                    </nav>
                 </div>
                 <div>
                     <p><strong>Nos hébergements</strong></p>
                 <!--Nos hébergements-->
-                    <nav></nav>
+                    <nav>
+                        <p>
+                            <a href="#">Charte qualité</a>
+                        </p>
+                        <p>
+                            <a href="#">Soumettre votre hôtel</a>
+                        </p>
+                    </nav>
                 </div>
                 <div>
                     <p><strong>Assistance</strong></p>
                 <!--Assistance-->
-                    <nav></nav>
+                    <nav>
+                        <p>
+                            <a href="#">Centre d'aide</a>
+                        </p>
+                        <p>
+                            <a href="#">Nous contacter</a>
+                        </p>
+                    </nav>
                 </div>
             </footer>
         </div>
