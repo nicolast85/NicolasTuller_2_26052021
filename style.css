@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'Raleway_Regular';
+    src: url('Raleway_Regular.ttf');
+}
+body {
+    font-family: 'Raleway_Regular', Arial, 'Arial Black' 'Comic Sans MS', Georgia, 'Times New Roman', Times, serif;
+}
