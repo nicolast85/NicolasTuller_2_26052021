@@ -3,5 +3,101 @@
     src: url('Raleway_Regular.ttf');
 }
 body {
-    font-family: 'Raleway_Regular', Arial, 'Arial Black' 'Comic Sans MS', Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Raleway_Regular', Arial, 'Arial Black', 'Comic Sans MS', Georgia, 'Times New Roman', Times, serif;
+}
+#logo {
+    margin-right: auto;
+}
+#logo img {
+    margin-top: 40px;
+    weight: 50px;
+    width: 100px;
+}
+#entete {
+    display: flex;
+    justify-content: flex-end;
+}
+#menu {
+    padding-top: 45px;
+    display: flex;
+    margin-right: 60px;
+    gap: 60px;
+}
+#menu div a {
+    text-decoration: none;
+    color: #000;
+    font-size: 17px;
+}
+#menu div :hover {
+    /*survole*/
+    border-top: #0065fc solid 2px;
+    color: #0065fc;
+    padding-top: 42px;
+    align-items: center;
+}
+#inscription {
+    padding-top: 45px;
+    padding-right: 2%;
+    font-size: 17px;
+}
+#inscription a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #0065fc
+}
+#st {
+    font-size: 16px;
+}
+.bloc_recherche {
+    display: flex;
+    margin-bottom: 9px;
+    font-size: 17px;
+}
+.position_map {
+    border: #f2f2f2 solid 2px;
+    border-radius: 13px 0px 0px 13px;
+    font-size: 17px;
+    background-color: #f2f2f2;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formulaire {
+    height: 50px;
+    width: 230px;
+    border: #f2f2f2 solid 2px;
+    font-weight: bold;
+    font-size: 17px;
+}
+.formulaire input {
+    text-decoration: none;
+    border: none;
+    height: 50px;
+    font-weight: bold;
+    width: 100%;
+}
+.formulaire input::placeholder {
+    /*intérieur bouton recherche*/
+    color: black;
+    font-size: 17px;
+    padding-left: 15px;
+}
+.bouton {
+    border: #0065fc solid 2px;
+    border-radius: 0px 13px 13px 0px;
+    font-size: 17px;
+    background-color: #0065fc;
+    color: white;
+    height: 50px;
+    width: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bouton a {
+    text-decoration: none;
+    color: white;
+    align-items: center;
 }
