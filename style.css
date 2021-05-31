@@ -101,3 +101,64 @@ body {
     color: white;
     align-items: center;
 }
+#hebergement h2 {
+    height: 58px;
+    font-size: 22px;
+    justify-content: center;
+    justify-items: center;
+    line-height: 58px;
+}
+#hebergements {
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    display: grid;
+    grid-auto-columns: 1fr 1fr 1fr;
+    grid-template-rows: 55px 1fr 1fr 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    grid-column-gap: 33px;
+    grid-row-gap: 33px;
+    background-size: cover;
+}
+.legendes {
+    padding-left: 15px;
+}
+.legendes div {
+    font-size: 12px;
+    padding-top: 8px;
+}
+.legendes .hotel {
+    font-size: 16px;
+    padding-top: 10px;
+}
+.legendes .tarifs {
+    font-size: 14px;
+    padding-top: 10px;
+}
+.carte {
+    border: white solid 5px;
+    background-color: white;
+    border-radius: 20px;
+    display: grid;
+    width: 266px;
+    height: 195px;
+    grid-template-rows: 2fr;
+    box-shadow: 3px 5px 5px #e2e2e2;
+}
+.carte a {
+    text-decoration: none;
+    color:black;
+}
+#hebergements .carte {
+    font-size: 10px;
+    background-size: cover;
+}
+.auberge_la_cannebiere {
+    background-image: url("images/hebergements/auberge_la_cannebiere.jpg");
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+    width: 265px;
+    height: 110px;
+    background-position: center;
+}
