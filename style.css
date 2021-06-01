@@ -45,7 +45,17 @@ body {
     font-weight: bold;
     color: #0065fc
 }
-#st {
+.recherche {
+    padding-top: 30px;
+    font-size: 22px;
+}
+.recherche form {
+    padding-top: 17px;
+}
+.recherche .st {
+    margin-top: 10px;
+}
+.st {
     font-size: 16px;
 }
 .bloc_recherche {
@@ -101,24 +111,82 @@ body {
     color: white;
     align-items: center;
 }
-#hebergement h2 {
-    height: 58px;
-    font-size: 22px;
+.filtres {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-right: 50px;
+    gap: 30px;
+}
+.mon_filtre {
+    margin-right: 1%;
+    margin-bottom: 0;
+    margin-left: 10px;
+}
+.filtres a {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    justify-items: center;
-    line-height: 58px;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    height: 46px;
+    line-height: 46px;
+}
+.filtres a:hover {
+    color: #0065fc;
+}
+.filtre {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: #f2f2f2 solid 2px;
+    border-radius: 50px;
+    margin-right: 29px;
+    height: 46px;
+    line-height: 46px;
+    padding-right: 25px;
+}
+.elements_filtres {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.filtre .fa {
+    font-size: 26px;
+    margin-left: -18px;
+    margin-top: -2px;
+}
+.filtre .fa-stack-1x {
+    font-size: 17px;
+}
+.hebergement {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 33px;
+    margin-right: 33px;
+    column-gap: 33px;
 }
 #hebergements {
     background-color: #f2f2f2;
     border-radius: 20px;
-    display: grid;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     grid-auto-columns: 1fr 1fr 1fr;
     grid-template-rows: 55px 1fr 1fr 50px;
     padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 10px;
-    grid-column-gap: 33px;
-    grid-row-gap: 33px;
+    column-gap: 33px;
+    row-gap: 33px;
     background-size: cover;
 }
 .legendes {
@@ -154,6 +222,25 @@ body {
     font-size: 10px;
     background-size: cover;
 }
+#hebergements h3 {
+    height: 58px;
+    font-size: 22px;
+    justify-content: center;
+    justify-items: center;
+    line-height: 58px;
+    font-weight: bold
+}
+.more {
+    font-weight: bold;
+    font-size: 18px;
+    padding-left: 5px;
+}
+p a {
+    text-decoration: none;
+    color: black;
+}
+
+/*mise en forme des photos*/
 .auberge_la_cannebiere {
     background-image: url("images/hebergements/auberge_la_cannebiere.jpg");
     background-size: cover;
@@ -161,4 +248,121 @@ body {
     width: 265px;
     height: 110px;
     background-position: center;
+}
+.hotel_du_port {
+    background-image: url("images/hebergements/hotel_du_port.jpg");
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+    width: 265px;
+    height: 110px;
+    background-position: center;
+}
+.hotel_les_mouettes {
+    background-image: url("images/hebergements/hotel_les_mouettes.jpg");
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+    width: 265px;
+    height: 110px;
+    background-position: center;
+}
+.hotel_de_la_mer {
+    background-image: url("images/hebergements/hotel_de_la_mer.jpg");
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+    width: 265px;
+    height: 110px;
+    background-position: center;
+}
+.auberge_le_panier {
+    background-image: url("images/hebergements/auberge_le_panier.jpg");
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+    width: 265px;
+    height: 110px;
+    background-position: center;
+}
+.hotel_chez_amina {
+    background-image: url("images/hebergements/hotel_chez_amina.jpg");
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+    width: 265px;
+    height: 110px;
+    background-position: center;
+}
+#populaires {
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: auto;
+    grid-template-rows: 55px 2fr 2fr 2fr;
+    grid-row-gap: 33px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 30px;
+    font-size: 12px;
+}
+.carte_populaires {
+    background-color: #fff;
+    border-radius: 20px;
+    border: 5px solid white;
+    width: 782px;
+    height: 145px;
+    box-shadow: 3px 5px 5px #e2e2e2;
+}
+.carte_populaires a {
+    text-decoration: none;
+    color: black;
+}
+.legendes_populaires {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    width: 170px;
+}
+.legendes_populaires p {
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+.choix_populaires {
+    display: grid;
+    grid-template-columns: 135px 1fr;
+    grid-column-gap: 10px;
+    border-radius: 20px 20px 20px 20px;
+}
+.choix_populaires .hotel_populaires {
+    font-size: 16px;
+    padding-top: 11px;
+    padding-left: 10px;
+}
+.choix_populaires .tarifs {
+    padding-left: 11px;
+    font-size: 14px;
+    padding-top: 10px;
+}
+.choix_populaires .etoiles {
+    padding-top: 45px;
+    font-size: 11px;
+    padding-left: 11px;
+}
+.hotel_le_soleil_du_matin {
+    background-position: center;
+    background-size: cover;
+    background-image: url("./images/populaires/hotel_le_soleil_du_matin.jpg");
+    border-radius: 20px 0px 0px 20px;
+    height: 135px;
+}
+.au_coeur_de_l_eau_chambres_d_hotes {
+    background-position: center;
+    background-size: cover;
+    background-image: url("./images/populaires/au_coeur_de_l_eau_chambres_d_hotes.jpg");
+    border-radius: 20px 0px 0px 20px;
+    height: 135px;
+}
+.hotel_tout_bleu_et_blanc {
+    background-position: center;
+    background-size: cover;
+    background-image: url("./images/populaires/hotel_tout_bleu_et_blanc.jpg");
+    border-radius: 20px 0px 0px 20px;
+    height: 135px;
 }
