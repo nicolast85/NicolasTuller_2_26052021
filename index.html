@@ -40,7 +40,7 @@
                         <strong>Trouvez votre hébergement pour des vaccances ce rêve</strong><br >
                         <div class="st">En plein centre ville ou en pleine nature</div>
                     </div>
-                <form method="post" action="traitement.php"
+                <form method="post" action="traitement.php">
                     <div class="bloc_recherche">
                             <div class="position_map">
                                 <i class="fas fa-map-marker-alt"></i>
@@ -94,13 +94,15 @@
                     <i class="fas fa-info fa-stack-1x" style="color: #0065FC;"></i>
                     </span>
                     Plus de 500 logements sont disponibles dans cette ville
-                    </div>
                 </div>
             </header>
-            <section class="hebergement">
+            <section class="a_la_une">
                 <div id="hebergements">
                 <!--hebergements à Marseille-->         
+                <div class="titres">
                     <h2>Hébergement à Marseille</h2>
+                </div>
+                <div class="selection">
                     <div class="carte">
                         <a href="#">
                             <div class="auberge_la_cannebiere"></div>
@@ -241,14 +243,17 @@
                         </div>
                         </a>
                     </div>
+                </div>
                     <div class="more">
                         <a href="#">Afficher plus</a>
                     </div>
                 </div>
                 <!--Les plus populaires-->
                 <div id="populaires">
-                <h2>Les plus populaires</h2> 
+                <div class="titres_populaires">
+                    <h2>Les plus populaires</h2>
                     <i class="fas fa-chart-line" style="color: #000;"></i>
+                </div>
                     <div class="carte_populaires">
                         <a href="#">
                         <div class="choix_populaires">
@@ -327,60 +332,73 @@
                     </div>
                 </div>
             </section>
-            <section>
-                <h2 id="activite">Activités à Marseille</h2>
+            <section id="activite">
+                <h2>Activités à Marseille</h2>
             <!--Activités à Marseille-->
-                <div>
+                <div class="vieux">
                     <a href="#">
-                        <p>
-                            <img src="images/activités/vieux_port.jpg" alt="Photo Vieux Port">
-                        </p>
-                    <strong>Vieux Port</strong>
+                        <div class="carte_activite">
+                            <div class="vieux_port"></div>
+                            <p>
+                            <strong>Vieux Port</strong>
+                            </p>
+                        </div>
                     </a>
                 </div>
-                <div>
+                <div class="pomegues">
                     <a href="#">
-                        <p>
-                            <img src="images/activités/fort_de_pomegues.jpg" alt="Photo Fort de Pomègues">
-                        </p>
-                    <strong>Fort de Pomègues</strong>
+                        <div class="carte_activite">
+                            <div class="fort_de_pomegues"></div>
+                            <p>
+                            <strong>Fort de Pomègues</strong>
+                            </p>
+                        </div>
                     </a>
                 </div>
-                <div>
+                <div class="iles">
                     <a href="#">
-                        <p>
-                            <img src="images/activités/iles_du_frioul.jpg" alt="Photo Îles du Frioul">
-                        </p>
-                    <strong>Îles du Frioul</strong>
+                        <div class="carte_activite">
+                            <div class="iles_du_frioul"></div>
+                            <p>
+                            <strong>Îles du Frioul</strong>
+                            </p>
+                        </div>
                     </a>
                 </div>
-                <div>
+                <div class="calanques">
                     <a href="#">
-                        <p>
-                            <img src="images/activités/parc_national_des_calanques.jpg" alt="Photo Parc National des Calanques">
-                        </p>
-                    <strong>Parc National des Calanques</strong>
+                        <div class="carte_activite">
+                            <div class="parc_national_des_calanques"></div>
+                            <p>
+                            <strong>Parc National des Calanques</strong>
+                            </p>
+                        </div>
                     </a>
                 </div>
-                <div>
+                <div class="dame">
                     <a href="#">
-                        <p>
-                            <img src="images/activités/notre_dame_de_la_garde.jpg" alt="Photo Notre-Dame-de-la-Garde">
-                        </p>
-                    <strong>Notre-Dame-de-la-Garde</strong>
+                        <div class="carte_activite">
+                            <div class="notre_dame_de_la_garde"></div>
+                            <p>
+                            <strong>Notre-Dame-de-la-Garde</strong>
+                            </p>
+                        </div>
                     </a>
                 </div>
-                <div>
+                <div class="longchamps">
                     <a href="#">
-                        <p>
-                            <img src="images/activités/parc_longchamp.jpg" alt="Photo Parc Longchamp">
-                        </p>
-                    <strong>Parc Longchamp</strong>
+                        <div class="carte_activite">
+                            <div class="parc_longchamps"></div>
+                            <p>
+                            <strong>Parc Longchamp</strong>
+                            </p>
+                        </div>
                     </a>
                 </div>
             </section>
             <footer>
-                <div>
+                <!--Pied de page-->
+                <div id="a_propos" class="footer_police">
                     <p><strong>A propos</strong></p>
                 <!--A propos-->
                     <nav>
@@ -395,7 +413,7 @@
                         </p>
                     </nav>
                 </div>
-                <div>
+                <div id="nos_hebergements" class="footer_police">
                     <p><strong>Nos hébergements</strong></p>
                 <!--Nos hébergements-->
                     <nav>
@@ -407,7 +425,7 @@
                         </p>
                     </nav>
                 </div>
-                <div>
+                <div id="assistance" class="footer_police">
                     <p><strong>Assistance</strong></p>
                 <!--Assistance-->
                     <nav>

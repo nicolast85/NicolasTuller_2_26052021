@@ -5,12 +5,18 @@
 body {
     font-family: 'Raleway_Regular', Arial, 'Arial Black', 'Comic Sans MS', Georgia, 'Times New Roman', Times, serif;
 }
+/*page entière*/
+#bloc_page {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+/*logo*/
 #logo {
     margin-right: auto;
 }
 #logo img {
     margin-top: 40px;
-    weight: 50px;
+    height: 50px;
     width: 100px;
 }
 #entete {
@@ -28,8 +34,8 @@ body {
     color: #000;
     font-size: 17px;
 }
+/*survole du menu*/
 #menu div :hover {
-    /*survole*/
     border-top: #0065fc solid 2px;
     color: #0065fc;
     padding-top: 42px;
@@ -167,27 +173,47 @@ body {
 .filtre .fa-stack-1x {
     font-size: 17px;
 }
-.hebergement {
+/*------------------*/
+/*---Hébergements---*/
+/*------------------*/
+.a_la_une {
     display: flex;
-    justify-content: space-between;
-    margin-left: 33px;
-    margin-right: 33px;
-    column-gap: 33px;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: flex-start;
+    column-gap: 10px;
+}
+#activite h2 {
+    height: 58px;
+    font-size: 22px;
+    justify-content: center;
+    justify-items: center;
+    line-height: 58px;
 }
 #hebergements {
     background-color: #f2f2f2;
     border-radius: 20px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    grid-auto-columns: 1fr 1fr 1fr;
-    grid-template-rows: 55px 1fr 1fr 50px;
+    flex-direction: column;
     padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 10px;
-    column-gap: 33px;
-    row-gap: 33px;
     background-size: cover;
+    width: 65%;
+}
+.titres {
+    padding-left: 5px;
+    padding-right: 40px;
+    display: flex;
+}
+.selection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 .legendes {
     padding-left: 15px;
@@ -208,10 +234,9 @@ body {
     border: white solid 5px;
     background-color: white;
     border-radius: 20px;
-    display: grid;
+    display: flex;
     width: 266px;
     height: 195px;
-    grid-template-rows: 2fr;
     box-shadow: 3px 5px 5px #e2e2e2;
 }
 .carte a {
@@ -222,7 +247,7 @@ body {
     font-size: 10px;
     background-size: cover;
 }
-#hebergements h3 {
+.titres h2 {
     height: 58px;
     font-size: 22px;
     justify-content: center;
@@ -234,8 +259,9 @@ body {
     font-weight: bold;
     font-size: 18px;
     padding-left: 5px;
+    margin-top: 40px;
 }
-p a {
+#hebergements a {
     text-decoration: none;
     color: black;
 }
@@ -302,12 +328,30 @@ p a {
     padding-bottom: 30px;
     font-size: 12px;
 }
+.titres_populaires {
+    padding-left: 5px;
+    padding-right: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.titres_populaires div {
+    font-size: 23px;
+    align-items: center;
+    height: 100px;
+    line-height: 100px;
+}
+.titres_populaires h2 {
+    height: 25px;
+    font-size: 22px;
+    justify-content: center;
+    justify-items: center;
+    line-height: 58px;
+    font-weight: bold
+}
 .carte_populaires {
     background-color: #fff;
     border-radius: 20px;
     border: 5px solid white;
-    width: 782px;
-    height: 145px;
     box-shadow: 3px 5px 5px #e2e2e2;
 }
 .carte_populaires a {
@@ -365,4 +409,145 @@ p a {
     background-image: url("./images/populaires/hotel_tout_bleu_et_blanc.jpg");
     border-radius: 20px 0px 0px 20px;
     height: 135px;
+}
+/*---------------*/
+/*---activités---*/
+/*---------------*/
+#activite {
+    border-radius: 20px;
+    display: grid;
+    font-size: 16px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 55px 2fr 2fr 2fr 2fr 2fr 2fr;
+    grid-column-gap: 45px;
+    grid-row-gap: 30px;
+    padding-bottom: 50px;
+    padding-top: 30px;
+}
+#activite a {
+    text-decoration: none;
+    color: black;
+}
+#activite p {
+    font-weight: bold;
+    margin-left: 5px;
+}
+#activite h2 {
+    grid-column: 1 / span 4;
+}
+.carte_activite {
+    border: white solid 5px;
+    background-color: white;
+    border-radius: 20px;
+    display: grid;
+    grid-template-rows: 2fr;
+    box-shadow: 3px 5px 5px #e2e2e2;
+}
+.carte_activite p {
+    padding-left: 15px;
+}
+.vieux_port {
+    background-image: url("./images/activités/vieux_port.jpg");
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+    background-position: center;
+    height: 390px;
+}
+.fort_de_pomegues {
+    background-image: url("./images/activités/fort_de_pomegues.jpg");
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+    background-position: center;
+}
+.iles_du_frioul {
+    background-image: url("./images/activités/iles_du_frioul.jpg");
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+    background-position: center;
+}
+.parc_national_des_calanques {
+    background-image: url("./images/activités/parc_national_des_calanques.jpg");
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+    background-position: center;
+}
+.notre_dame_de_la_garde {
+    background-image: url("./images/activités/notre_dame_de_la_garde.jpg");
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+    background-position: center;
+}
+.parc_longchamps {
+    background-image: url("./images/activités/parc_longchamp.jpg");
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+    background-position: center;
+}
+.vieux {
+    grid-row: span 6; /*sur 6 lignes*/
+    grid-column-start: 1; /*dans la colonne 1*/
+    border-radius: 20px 20px 20px 20px;
+}
+.pomegues {
+    grid-row: 2 / span 4; /*sur 4 lignes*/
+    grid-column-start: 2; /*dans la colonne 2*/
+    border-radius: 20px 20px 20px 20px;
+}
+.iles {
+    grid-row: 6 / span 2; /*sur 2 lignes*/
+    grid-column-start: 2; /*dans la colonne 2*/
+    border-radius: 20px 20px 20px 20px;
+}
+.calanques {
+    grid-row: 2 / span 6; /*sur 6 lignes*/
+    grid-column-start: 3; /*dans la colonne 3*/
+    border-radius: 20px 20px 20px 20px;
+}
+.dame {
+    grid-row: 2 / span 3; /*sur 3 lignes*/
+    grid-column-start: 4; /*dans la colonne 4*/
+    border-radius: 20px 20px 20px 20px;
+}
+.longchamps {
+    grid-row: 5 / span 3; /*sur 3 lignes*/
+    grid-column-start: 4; /*dans la colonne 4*/
+    border-radius: 20px 20px 20px 20px;
+}
+.vieux .carte_activite,
+.pomegues .carte_activite,
+.iles .carte_activite,
+.calanques .carte_activite,
+.dame .carte_activite,
+.longchamps .carte_activite {
+    height: 100%;
+    border: none;
+}
+
+/*------------*/
+/*---footer---*/
+/*------------*/
+footer {
+    display: flex;
+    flex-direction: row; /*orga sur une ligne*/
+    flex-wrap: wrap; /*retour à la ligne si plus de place*/
+    justify-content: space-between; /*éléments étirés, espace entre eux*/
+    background-color: #f2f2f2;
+    font-size: 18px;
+    margin-top: 20px; /*marge extérieur*/
+    margin-left: -50px; /*annulé marge goblale*/
+    margin-right: -50px;
+    padding-bottom: 20px; /*marge intérieur*/
+    padding-left: 60px;
+    padding-right: 350px;
+    padding-top: 20px;
+}
+footer nav {
+    font-size: 16px; /*taille police menu*/
+}
+.footer_police a {
+    text-decoration: none; /*enlever le soulignage*/
+    color: black;
+}
+.footer_police strong {
+    font-weight: bold; /*niveau de gras*/
 }
