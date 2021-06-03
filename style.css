@@ -1,11 +1,23 @@
 @font-face {
-    font-family: 'Raleway_Regular';
+    font-family: 'Raleway';
     src: url('Raleway_Regular.ttf');
-    font-family: 'Raleway_Bold';
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Raleway';
     src: url('Raleway_Bold.ttf');
+    font-weight: bold;
+    font-size: normal;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('Raleway_SemiBold.ttf');
+    font-weight: 600;
+    font-size: normal;
 }
 body {
-    font-family: 'Raleway_Regular', Arial, 'Arial Black', 'Comic Sans MS', Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Raleway', Arial, 'Arial Black', 'Comic Sans MS', Georgia, 'Times New Roman', Times, serif;
 }
 /*page entière*/
 #bloc_page {
@@ -35,6 +47,7 @@ body {
     text-decoration: none;
     color: #000;
     font-size: 17px;
+    font-weight: 600;
 }
 /*survole du menu*/
 #menu div :hover {
@@ -50,7 +63,7 @@ body {
 }
 #inscription a {
     text-decoration: none;
-    font-family: 'Raleway_Bold';
+    font-weight: bold;
     color: #0065fc
 }
 .recherche {
@@ -86,14 +99,14 @@ body {
     height: 50px;
     width: 230px;
     border: #f2f2f2 solid 2px;
-    font-family: 'Raleway_Bold';
+    font-weight: bold;
     font-size: 17px;
 }
 .formulaire input {
     text-decoration: none;
     border: none;
     height: 50px;
-    font-family: 'Raleway_Bold';
+    font-weight: Bold;
     width: 100%;
 }
 .formulaire input::placeholder {
@@ -125,7 +138,7 @@ body {
     flex-wrap: wrap;
     align-items: center;
     font-size: 18px;
-    font-family: 'Raleway_Bold';
+    font-weight: bold;
     margin-top: 30px;
     margin-right: 50px;
     gap: 30px;
@@ -145,7 +158,7 @@ body {
     color: black;
     height: 46px;
     line-height: 46px;
-    font-family: 'raleway_bold';
+    font-weight: bold;
     margin-top: -22px;
     margin-left: -20px;
 }
@@ -196,6 +209,7 @@ body {
     margin-right: 10px;
     font-size: 8px;
 }
+
 /*------------------*/
 /*---Hébergements---*/
 /*------------------*/
@@ -204,19 +218,17 @@ body {
     flex-direction: row;
     flex-wrap: wrap-reverse;
     justify-content: space-between;
-    column-gap: 10px;
 }
 #hebergements {
     background-color: #f2f2f2;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    padding-left: 40px;
-    padding-right: 40px;
     padding-bottom: 10px;
-    margin-left: -10px;
+    padding-left: 30px;
+    padding-right: 30px;
     background-size: cover;
-    width: 64%;
+    width: 60%;
 }
 .titres {
     padding-left: 5px;
@@ -227,8 +239,8 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    column-gap: 27px;
-    row-gap: 27px;
+    column-gap: 22px;
+    row-gap: 22px;
     padding-left: 5px;
     padding-right: 5px;
 }
@@ -242,7 +254,7 @@ body {
 .legendes .hotel {
     font-size: 18px;
     padding-top: 10px;
-    font-family: 'raleway_bold';
+    font-weight: Bold;
 }
 .legendes .tarifs {
     font-size: 14px;
@@ -253,7 +265,7 @@ body {
     background-color: white;
     border-radius: 20px;
     display: flex;
-    width: 266px;
+    width: 250px;
     height: 195px;
     box-shadow: 3px 5px 5px #e2e2e2;
 }
@@ -271,10 +283,10 @@ body {
     justify-content: center;
     justify-items: center;
     line-height: 58px;
-    font-family: 'Raleway_Bold';
+    font-weight: Bold;
 }
 .more {
-    font-family: 'Raleway_Bold';
+    font-weight: Bold;
     font-size: 18px;
     padding-left: 5px;
     margin-top: 40px;
@@ -289,48 +301,48 @@ body {
     background-image: url("images/hebergements/auberge_la_cannebiere.jpg");
     background-size: cover;
     border-radius: 20px 20px 0px 0px;
-    width: 265px;
-    height: 110px;
+    width: 250px;
+    height: 115px;
     background-position: center;
 }
 .hotel_du_port {
     background-image: url("images/hebergements/hotel_du_port.jpg");
     background-size: cover;
     border-radius: 20px 20px 0px 0px;
-    width: 265px;
-    height: 110px;
+    width: 250px;
+    height: 115px;
     background-position: center;
 }
 .hotel_les_mouettes {
     background-image: url("images/hebergements/hotel_les_mouettes.jpg");
     background-size: cover;
     border-radius: 20px 20px 0px 0px;
-    width: 265px;
-    height: 110px;
+    width: 250px;
+    height: 115px;
     background-position: center;
 }
 .hotel_de_la_mer {
     background-image: url("images/hebergements/hotel_de_la_mer.jpg");
     background-size: cover;
     border-radius: 20px 20px 0px 0px;
-    width: 265px;
-    height: 110px;
+    width: 250px;
+    height: 115px;
     background-position: center;
 }
 .auberge_le_panier {
     background-image: url("images/hebergements/auberge_le_panier.jpg");
     background-size: cover;
     border-radius: 20px 20px 0px 0px;
-    width: 265px;
-    height: 110px;
+    width: 250px;
+    height: 115px;
     background-position: center;
 }
 .hotel_chez_amina {
     background-image: url("images/hebergements/hotel_chez_amina.jpg");
     background-size: cover;
     border-radius: 20px 20px 0px 0px;
-    width: 265px;
-    height: 110px;
+    width: 250px;
+    height: 115px;
     background-position: center;
 }
 #populaires {
@@ -371,7 +383,7 @@ body {
     justify-content: center;
     justify-items: center;
     line-height: 58px;
-    font-family: 'Raleway_Bold';
+    font-weight: Bold;
 }
 .carte_populaires {
     background-color: #fff;
@@ -403,7 +415,7 @@ body {
     font-size: 18px;
     padding-top: 11px;
     padding-left: 10px;
-    font-family: 'raleway_bold';
+    font-weight: bold;
 }
 .choix_populaires .tarifs {
     padding-left: 11px;
@@ -460,7 +472,7 @@ body {
 }
 .titre_activite p {
     font-size: 16px;
-    font-family: 'Raleway_Bold';
+    font-weight: Bold;
     margin-left: 5px;
 }
 .selection_activite {
@@ -580,5 +592,5 @@ footer nav {
     color: black;
 }
 .footer_police strong {
-    font-family: 'Raleway_Bold'; /*niveau de gras*/
+    font-weight: Bold; /*niveau de gras*/
 }
