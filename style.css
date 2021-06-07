@@ -18,6 +18,7 @@
 }
 body {
     font-family: 'Raleway', Arial, 'Arial Black', 'Comic Sans MS', Georgia, 'Times New Roman', Times, serif;
+    margin: 0px; /*retirer marge par défault*/
 }
 /*page entière*/
 #bloc_page {
@@ -25,7 +26,7 @@ body {
     margin-right: 50px;
 }
 @media all and (max-width: 600px) {
-    /*mobile*/
+    /*marge sur mobile*/
     #bloc_page {
       width: auto;
       margin-left: 5px;
@@ -37,8 +38,9 @@ body {
     margin-right: auto;
 }
 @media all and (max-width: 600px) {
-    #logo #logo {
-        padding-left: 3%;
+    /*décalage du logo sur mobile*/
+    #logo {
+        padding-left: 4%;
     }
 }
 #logo img {
@@ -47,15 +49,18 @@ body {
     width: 100px;
 }
 @media all and (max-width: 600px) {
+    /*marge du logo sur mobile*/
     #logo img {
         margin-top: 25px;
     }
 }
+/*menu à droite*/
 #entete {
     display: flex;
     justify-content: flex-end;
 }
 @media all and (max-width: 600px) {
+    /*menu en grille sur mobile*/
     #entete {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -69,6 +74,7 @@ body {
     gap: 60px;
 }
 @media all and (max-width: 600px) {
+    /*bordure bot pour le menu sur mobile*/
     #menu {
         grid-column: 1 / span2;
         column-gap: 0;
@@ -85,11 +91,12 @@ body {
     font-weight: 600;
 }
 @media all and (max-width: 600px) {
+    /*mobile*/
     #menu div a {
         font-size: 15px;
     }
 }
-/*survole du menu*/
+/*bordure top au survole du menu*/
 #menu div :hover {
     border-top: #0065fc solid 2px;
     color: #0065fc;
@@ -97,18 +104,20 @@ body {
     align-items: center;
 }
 @media all and (max-width: 600px) {
+    /*bordure bot au survole du menu sur mobile*/
     #menu :hover {
         border-bottom: #0065fc solid 3px;   
     }
 }
 @media all and (max-width: 600px) {
+    /*retrait bordure top sur mobile*/
     #menu div :hover {
-        border-bottom: #0065fc solid 2px;
         border-top: none;
         padding-top: 0;
     }
 }
 @media all and (max-width: 600px) {
+    /*retrait bordure bot des liens du menu sur mobile*/
     #menu a:hover {
         border-bottom: none;
     }
@@ -128,6 +137,7 @@ body {
     font-size: 17px;
 }
 @media all and (max-width: 600px) {
+    /*s'inscrire passe sur la 2eme colonne et prend 1 ligne*/
     #inscription {
         grid-row: 1;
         grid-column-start: 2;
@@ -135,7 +145,7 @@ body {
     }
 }
 #inscription a {
-    text-decoration: none;
+    text-decoration: none; /*enlève sur soulignage de s'inscrire*/
     font-weight: bold;
     color: #0065fc
 }
@@ -143,6 +153,7 @@ body {
     padding-top: 30px;
     font-size: 22px;
 }
+/*espace entre le texte et le formulaire de recherche*/
 .recherche form {
     padding-top: 17px;
 }
@@ -151,6 +162,7 @@ body {
         padding-top: 33px;
     }
 }
+/*espace entre les textes au dessus du formulaire de recherche*/
 .recherche .st {
     margin-top: 10px;
 }
@@ -163,6 +175,7 @@ body {
     font-size: 17px;
     margin-left: 10px;
 }
+/*icone localisation*/
 .position_map {
     border: #f2f2f2 solid 2px;
     border-radius: 13px 0px 0px 13px;
@@ -188,12 +201,13 @@ body {
     font-weight: Bold;
     width: 100%;
 }
+/*texte indicatif dans le formualaire de recherche*/
 .formulaire input::placeholder {
-    /*intérieur bouton recherche*/
     color: black;
     font-size: 17px;
     padding-left: 15px;
 }
+/*bouton de recherche*/
 .bouton input {
     border: #0065fc solid 2px;
     border-radius: 0px 13px 13px 0px;
@@ -207,6 +221,7 @@ body {
     align-items: center;
 }
 @media all and (max-width: 600px) {
+    /*bouton de recherche devient une image et perd son texte sur mobile*/
     .bouton input {
         width: 53px;
         background-color: #0065fc;
@@ -219,6 +234,7 @@ body {
         margin-left: -10px;
     }
 }
+/*permet d'avoir le curseur de la souris en forme de main sur le bouton de recherche*/
 .bouton input:hover {
     cursor: pointer;
 }
@@ -239,9 +255,9 @@ body {
     }
 }
 .mon_filtre {
-    margin-right: 1%;
     margin-bottom: 0;
     margin-left: 10px;
+    margin-right: 10px;
 }
 .filtres a {
     display: flex;
@@ -262,9 +278,11 @@ body {
         margin-top: -10px;
     }
 }
+/*filtres affichés en bleu au survole*/
 .filtres a:hover {
     color: #0065fc;
 }
+/*filtre individuel*/
 .filtre {
     display: flex;
     flex-direction: row;
@@ -281,7 +299,7 @@ body {
 @media all and (max-width: 600px) {
     .filtre {
         display: flex;
-        flex-direction: row; /*A FINIR*/
+        flex-direction: row;
         justify-content: left;
         font-size: 14px;
         margin-right: 10px;
@@ -290,7 +308,6 @@ body {
 .elements_filtres {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
     row-gap: 20px;
 }
 @media all and (max-width: 600px) {
@@ -300,6 +317,7 @@ body {
         margin-left: 10px;
     }
 }
+/*alignement des icones fontAwesome*/
 .filtre .fa-stack-2x {
     font-size: 50px;
     margin-left: -22px;
@@ -344,13 +362,9 @@ body {
 .a_la_une {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse; /*affiche les populaires au dessus des autres si reduction de la fenêtre*/
     justify-content: space-between;
-}
-@media all and (max-width: 600px) {
-    .a_la_une {
-        row-gap: 30px;
-    }
+    row-gap: 30px;
 }
 #hebergements {
     background-color: #f2f2f2;
@@ -359,7 +373,7 @@ body {
     flex-direction: column;
     padding-bottom: 10px;
     padding-left: 30px;
-    padding-right: 30px;
+    padding-right: 20px;
     background-size: cover;
     width: 60%;
 }
@@ -375,7 +389,7 @@ body {
 }
 .titres {
     padding-left: 5px;
-    padding-right: 40px;
+    padding-right: 5px;
     display: flex;
 }
 @media all and (max-width: 600px) {
@@ -639,12 +653,22 @@ body {
     padding-bottom: 20px;
     padding-top: 80px;
 }
+@media all and (max-width: 600px) {
+    #activite {
+        padding-top: 30px;
+    }
+}
 #activite h2 {
     height: 58px;
     font-size: 22px;
     justify-content: center;
     justify-items: center;
     line-height: 58px;
+}
+@media all and (max-width: 600px) {
+    #activite h2 {
+        margin-left: 10px;
+    }
 }
 #activite a {
     text-decoration: none;
@@ -663,7 +687,14 @@ body {
     column-gap: 45px;
     row-gap: 30px;
     padding-bottom: 50px;
-    padding-top: 30px;
+}
+@media all and (max-width: 600px) {
+    .selection_activite {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        padding-bottom: 30px;
+    }
 }
 .carte_activite {
     border: white solid 5px;
@@ -685,11 +716,21 @@ body {
     background-position: center;
     height: 390px;
 }
+@media all and (max-width: 600px) {
+    .vieux_port {
+        height: 135px;
+    }
+}
 .fort_de_pomegues {
     background-image: url("./images/activités/fort_de_pomegues.jpg");
     background-size: cover;
     border-radius: 20px 20px 0px 0px;
     background-position: center;
+}
+@media all and (max-width: 600px) {
+    .fort_de_pomegues {
+        height: 135px;
+    }
 }
 .iles_du_frioul {
     background-image: url("./images/activités/iles_du_frioul.jpg");
@@ -697,11 +738,21 @@ body {
     border-radius: 20px 20px 0px 0px;
     background-position: center;
 }
+@media all and (max-width: 600px) {
+    .iles_du_frioul {
+        height: 135px;
+    }
+}
 .parc_national_des_calanques {
     background-image: url("./images/activités/parc_national_des_calanques.jpg");
     background-size: cover;
     border-radius: 20px 20px 0px 0px;
     background-position: center;
+}
+@media all and (max-width: 600px) {
+    .parc_national_des_calanques {
+        height: 135px;
+    }
 }
 .notre_dame_de_la_garde {
     background-image: url("./images/activités/notre_dame_de_la_garde.jpg");
@@ -709,11 +760,21 @@ body {
     border-radius: 20px 20px 0px 0px;
     background-position: center;
 }
+@media all and (max-width: 600px) {
+    .notre_dame_de_la_garde {
+        height: 135px;
+    }
+}
 .parc_longchamps {
     background-image: url("./images/activités/parc_longchamp.jpg");
     background-size: cover;
     border-radius: 20px 20px 0px 0px;
     background-position: center;
+}
+@media all and (max-width: 600px) {
+    .parc_longchamps {
+        height: 135px;
+    }
 }
 /*Alignement carte activités avec grid*/
 .vieux {
@@ -763,6 +824,17 @@ footer {
     padding-left: 60px;
     padding-right: 350px;
     padding-top: 20px;
+}
+@media all and (max-width: 600px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        margin-right: -15px;
+        margin-left: -15px;
+        padding-left: 20px;
+        padding-right: 10px;
+    }
 }
 footer nav {
     font-size: 16px; /*taille police menu*/
