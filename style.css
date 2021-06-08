@@ -81,8 +81,8 @@ body {
         grid-column: 1 / span2;
         column-gap: 0;
         border-bottom: #deebff solid 2px;
-        margin-right: -10px;
-        margin-left: -10px;
+        margin-right: -15px;
+        margin-left: -15px;
         padding-top: 0;
     }
 }
@@ -137,6 +137,11 @@ body {
     padding-top: 45px;
     padding-right: 2%;
     font-size: 17px;
+}
+@media all and (max-width: 1024px) {
+    #inscription {
+        padding-right: 0;
+    }
 }
 @media all and (max-width: 700px) {
     /*s'inscrire passe sur la 2eme colonne et prend 1 ligne*/
@@ -379,13 +384,14 @@ body {
         display: flex;
         flex-direction: column-reverse;
         margin-left: -50px;
+        margin-right: -55px;
         padding-left: 30px;
     }
 }
 @media all and (max-width: 700px) {
     .a_la_une {
-        margin-left: -5px;
-        padding-left: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
 #hebergements {
@@ -395,22 +401,25 @@ body {
     flex-direction: column;
     padding-bottom: 10px;
     padding-left: 30px;
-    padding-right: 20px;
+    padding-right: 30px;
     background-size: cover;
     width: 60%;
 }
 @media all and (max-width: 1024px) {
     #hebergements {
         width: 100%;
+        padding-left: 10px;
+        margin-left: 10px;
     }
 }
 @media all and (max-width: 700px) {
     #hebergements {
         background-color: #fff;
+        padding-right: 20px;
         padding-left: 0;
         padding-bottom: 0;
-        margin-left: 0px;
-        margin-right: -15px;
+        margin-left: 0;
+        margin-right: 0;
         width: 100%;
     }
 }
@@ -419,17 +428,24 @@ body {
     padding-right: 5px;
     display: flex;
 }
+@media all and (max-width: 1024px) {
+    .titres {
+        padding-left: 20px;
+    }
+}
 @media all and (max-width: 700px) {
     .titres {
         margin-bottom: 20px;
+        padding-left: 0;
+        margin-left: -10px;
     }
 }
 .selection {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    column-gap: 22px;
-    row-gap: 22px;
+    column-gap: 30px;
+    row-gap: 30px;
     padding-left: 5px;
     padding-right: 5px;
 }
@@ -438,6 +454,15 @@ body {
         justify-content: space-around;
         column-gap: 33px;
         row-gap: 33px;
+    }
+}
+@media all and (max-width: 700px) {
+    .selection {
+        margin-left: -15px;
+        margin-right: -15px;
+        row-gap: 20px;
+        padding-left: 7px;
+        padding-right: 0;
     }
 }
 .legendes {
@@ -499,6 +524,16 @@ body {
     font-size: 18px;
     padding-left: 5px;
     margin-top: 40px;
+}
+@media all and (max-width: 1024px) {
+    .more {
+        padding-left: 20px;
+    }
+}
+@media all and (max-width: 700px) {
+    .more {
+        padding-left: 0;
+    }
 }
 #hebergements a {
     text-decoration: none;
@@ -575,13 +610,18 @@ body {
     padding-bottom: 30px;
     font-size: 12px;
 }
+@media all and (max-width: 1024px) {
+    #populaires {
+        padding-left: 45px;
+    }
+}
 @media all and (max-width: 700px) {
     #populaires {
         border-radius: 0;
         padding-left: 10px;
-        padding-right: 10px;
-        margin-left: -14px;
-        margin-right: -10px;
+        padding-right: 5px;
+        margin-left: -15px;
+        margin-right: -15px;
     }
 }
 .selection_populaires {
@@ -594,6 +634,7 @@ body {
     .selection_populaires {
         padding-left: 10px;
         padding-right: 5px;
+        row-gap: 20px;
     }
 }
 .titres_populaires {
@@ -695,6 +736,11 @@ body {
     flex-direction: column;
     padding-bottom: 20px;
     padding-top: 80px;
+}
+@media all and (max-width: 1024px) {
+    #activite {
+        margin-left: -10px;
+    }
 }
 @media all and (max-width: 700px) {
     #activite {
