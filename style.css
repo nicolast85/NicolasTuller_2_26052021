@@ -25,7 +25,7 @@ body {
     margin-left: 50px;
     margin-right: 50px;
 }
-@media all and (max-width: 600px) {
+@media all and (max-width: 700px) {
     /*marge sur mobile*/
     #bloc_page {
       width: auto;
@@ -37,7 +37,7 @@ body {
 #logo {
     margin-right: auto;
 }
-@media all and (max-width: 600px) {
+@media all and (max-width: 700px) {
     /*décalage du logo sur mobile*/
     #logo {
         padding-left: 4%;
@@ -48,7 +48,7 @@ body {
     height: 50px;
     width: 100px;
 }
-@media all and (max-width: 600px) {
+@media all and (max-width: 700px) {
     /*marge du logo sur mobile*/
     #logo img {
         margin-top: 25px;
@@ -59,7 +59,7 @@ body {
     display: flex;
     justify-content: flex-end;
 }
-@media all and (max-width: 600px) {
+@media all and (max-width: 700px) {
     /*menu en grille sur mobile*/
     #entete {
         display: grid;
@@ -73,7 +73,7 @@ body {
     margin-right: 60px;
     gap: 60px;
 }
-@media all and (max-width: 600px) {
+@media all and (max-width: 700px) {
     /*bordure bot pour le menu sur mobile*/
     #menu {
         grid-column: 1 / span2;
@@ -90,7 +90,7 @@ body {
     font-size: 17px;
     font-weight: 600;
 }
-@media all and (max-width: 600px) {
+@media all and (max-width: 700px) {
     /*mobile*/
     #menu div a {
         font-size: 15px;
@@ -103,26 +103,26 @@ body {
     padding-top: 42px;
     align-items: center;
 }
-@media all and (max-width: 600px) {
+@media all and (max-width: 700px) {
     /*bordure bot au survole du menu sur mobile*/
     #menu :hover {
         border-bottom: #0065fc solid 3px;   
     }
 }
-@media all and (max-width: 600px) {
+@media all and (max-width: 700px) {
     /*retrait bordure top sur mobile*/
     #menu div :hover {
         border-top: none;
         padding-top: 0;
     }
 }
-@media all and (max-width: 600px) {
+@media all and (max-width: 700px) {
     /*retrait bordure bot des liens du menu sur mobile*/
     #menu a:hover {
         border-bottom: none;
     }
 }
-@media all and (max-width: 600px) {
+@media all and (max-width: 700px) {
     #menu div {
         display: flex;
         justify-content: center;
@@ -136,7 +136,7 @@ body {
     padding-right: 2%;
     font-size: 17px;
 }
-@media all and (max-width: 600px) {
+@media all and (max-width: 700px) {
     /*s'inscrire passe sur la 2eme colonne et prend 1 ligne*/
     #inscription {
         grid-row: 1;
@@ -157,7 +157,7 @@ body {
 .recherche form {
     padding-top: 17px;
 }
-@media all and (max-width: 600px) {
+@media all and (max-width: 700px) {
     .recherche form {
         padding-top: 33px;
     }
@@ -220,7 +220,7 @@ body {
     justify-content: center;
     align-items: center;
 }
-@media all and (max-width: 600px) {
+@media all and (max-width: 700px) {
     /*bouton de recherche devient une image et perd son texte sur mobile*/
     .bouton input {
         width: 53px;
@@ -249,7 +249,7 @@ body {
     margin-right: 50px;
     gap: 30px;
 }
-@media all and (max-width: 600px) {
+@media all and (max-width: 700px) {
     .filtres {
         margin-right: 0;
     }
@@ -273,7 +273,7 @@ body {
     margin-top: -22px;
     margin-left: -20px;
 }
-@media all and (max-width: 600px) {
+@media all and (max-width: 700px) {
     .filtres a {
         margin-top: -10px;
     }
@@ -296,7 +296,7 @@ body {
     line-height: 46px;
     padding-right: 20px;
 }
-@media all and (max-width: 600px) {
+@media all and (max-width: 700px) {
     .filtre {
         display: flex;
         flex-direction: row;
@@ -310,7 +310,7 @@ body {
     flex-wrap: wrap;
     row-gap: 20px;
 }
-@media all and (max-width: 600px) {
+@media all and (max-width: 700px) {
     .elements_filtres {
         justify-content: left;
         gap: 10px;
@@ -328,7 +328,7 @@ body {
     margin-left: -22px;
     margin-top: -14px;
 }
-@media all and (max-width: 600px) {
+@media all and (max-width: 700px) {
     .filtre .fa-stack-1x {
         margin-top: -6px;
     }
@@ -344,7 +344,7 @@ body {
     padding-top: 35px;
     padding-bottom: 34px;
 }
-@media all and (max-width: 600px) {
+@media all and (max-width: 700px) {
     .info {
         font-size: 15px;
         padding-top: 0;
@@ -366,6 +366,19 @@ body {
     justify-content: space-between;
     row-gap: 30px;
 }
+@media all and (max-width: 1024px) {
+    .a_la_une {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-left: -50px;
+        padding-left: 30px;
+    }
+}
+@media all and (max-width: 700px) {
+    .a_la_une {
+        margin-left: -5px;
+    }
+}
 #hebergements {
     background-color: #f2f2f2;
     border-radius: 20px;
@@ -377,11 +390,15 @@ body {
     background-size: cover;
     width: 60%;
 }
-@media all and (max-width: 600px) {
+@media all and (max-width: 1024px) {
+    #hebergements {
+        width: 100%;
+    }
+}
+@media all and (max-width: 700px) {
     #hebergements {
         background-color: #fff;
         padding-left: 0;
-        padding-right: 0;
         padding-bottom: 0;
         margin-left: 0;
         width: 100%;
@@ -392,7 +409,7 @@ body {
     padding-right: 5px;
     display: flex;
 }
-@media all and (max-width: 600px) {
+@media all and (max-width: 700px) {
     .titres {
         margin-bottom: 20px;
     }
@@ -405,6 +422,13 @@ body {
     row-gap: 22px;
     padding-left: 5px;
     padding-right: 5px;
+}
+@media all and (max-width: 1024px) {
+    .selection {
+        justify-content: space-around;
+        column-gap: 33px;
+        row-gap: 33px;
+    }
 }
 .legendes {
     padding-left: 15px;
@@ -431,7 +455,7 @@ body {
     height: 195px;
     box-shadow: 3px 5px 5px #e2e2e2;
 }
-@media all and (max-width: 600px) {
+@media all and (max-width: 700px) {
     .carte {
         flex-direction: column;
         width: 100%;
@@ -453,7 +477,7 @@ body {
     line-height: 58px;
     font-weight: Bold;
 }
-@media all and (max-width: 600px) {
+@media all and (max-width: 700px) {
     .titres h2 {
         margin-left: 10px;
         height: 0;
@@ -520,7 +544,7 @@ body {
     height: 115px;
     background-position: center;
 }
-@media all and (max-width: 600px) {
+@media all and (max-width: 700px) {
     .auberge_la_cannebiere,
     .hotel_du_port,
     .hotel_les_mouettes,
@@ -535,15 +559,13 @@ body {
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    grid-template-columns: auto;
-    grid-template-rows: 55px 2fr 2fr 2fr;
     row-gap: 33px;
     padding-left: 35px;
     padding-right: 35px;
     padding-bottom: 30px;
     font-size: 12px;
 }
-@media all and (max-width: 600px) {
+@media all and (max-width: 700px) {
     #populaires {
         border-radius: 0;
         padding-left: 10px;
@@ -557,6 +579,12 @@ body {
     display: flex;
     flex-direction: column;
     row-gap: 33px;
+}
+@media all and (max-width: 700px) {
+    .selection_populaires {
+        padding-left: 10px;
+        padding-right: 5px;
+    }
 }
 .titres_populaires {
     padding-left: 5px;
@@ -578,6 +606,11 @@ body {
     justify-items: center;
     line-height: 58px;
     font-weight: Bold;
+}
+@media all and (max-width: 700px) {
+    .titres_populaires h2 {
+        padding-left: 10px;
+    }
 }
 .carte_populaires {
     background-color: #fff;
@@ -653,7 +686,7 @@ body {
     padding-bottom: 20px;
     padding-top: 80px;
 }
-@media all and (max-width: 600px) {
+@media all and (max-width: 700px) {
     #activite {
         padding-top: 30px;
     }
@@ -665,7 +698,7 @@ body {
     justify-items: center;
     line-height: 58px;
 }
-@media all and (max-width: 600px) {
+@media all and (max-width: 700px) {
     #activite h2 {
         margin-left: 10px;
     }
@@ -683,12 +716,19 @@ body {
     border-radius: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 55px 2fr 2fr 2fr 2fr 2fr 2fr;
+    grid-template-rows: 2fr 2fr 2fr 2fr 2fr 2fr;
     column-gap: 45px;
     row-gap: 30px;
     padding-bottom: 50px;
 }
-@media all and (max-width: 600px) {
+@media all and (max-width: 1024px) {
+    .selection_activite{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+@media all and (max-width: 700px) {
     .selection_activite {
         display: flex;
         flex-direction: column;
@@ -716,7 +756,13 @@ body {
     background-position: center;
     height: 390px;
 }
-@media all and (max-width: 600px) {
+@media all and (max-width: 1024px) {
+    .vieux_port {
+        height: 390px;
+        width: 100%;
+    }
+}
+@media all and (max-width: 700px) {
     .vieux_port {
         height: 135px;
     }
@@ -727,7 +773,13 @@ body {
     border-radius: 20px 20px 0px 0px;
     background-position: center;
 }
-@media all and (max-width: 600px) {
+@media all and (max-width: 1024px) {
+    .fort_de_pomegues {
+        height: 390px;
+        width: 100%;
+    }
+}
+@media all and (max-width: 700px) {
     .fort_de_pomegues {
         height: 135px;
     }
@@ -738,7 +790,13 @@ body {
     border-radius: 20px 20px 0px 0px;
     background-position: center;
 }
-@media all and (max-width: 600px) {
+@media all and (max-width: 1024px) {
+    .iles_du_frioul {
+        height: 390px;
+        width: 100%;
+    }
+}
+@media all and (max-width: 700px) {
     .iles_du_frioul {
         height: 135px;
     }
@@ -749,7 +807,13 @@ body {
     border-radius: 20px 20px 0px 0px;
     background-position: center;
 }
-@media all and (max-width: 600px) {
+@media all and (max-width: 1024px) {
+    .parc_national_des_calanques {
+        height: 390px;
+        width: 100%;
+    }
+}
+@media all and (max-width: 700px) {
     .parc_national_des_calanques {
         height: 135px;
     }
@@ -760,7 +824,13 @@ body {
     border-radius: 20px 20px 0px 0px;
     background-position: center;
 }
-@media all and (max-width: 600px) {
+@media all and (max-width: 1024px) {
+    .notre_dame_de_la_garde {
+        height: 390px;
+        width: 100%;
+    }
+}
+@media all and (max-width: 700px) {
     .notre_dame_de_la_garde {
         height: 135px;
     }
@@ -771,7 +841,13 @@ body {
     border-radius: 20px 20px 0px 0px;
     background-position: center;
 }
-@media all and (max-width: 600px) {
+@media all and (max-width: 1024px) {
+    .parc_longchamps {
+        height: 390px;
+        width: 100%;
+    }
+}
+@media all and (max-width: 700px) {
     .parc_longchamps {
         height: 135px;
     }
@@ -782,30 +858,66 @@ body {
     grid-column-start: 1; /*commence dans la colonne 1*/
     border-radius: 20px 20px 20px 20px;
 }
+@media all and (max-width: 1024px) {
+    .vieux {
+        grid-row: 1;
+        grid-column-start: 1;
+    }
+}
 .pomegues {
     grid-row: span 4; /*sur 4 lignes*/
     grid-column-start: 2; /*commence dans la colonne 2*/
     border-radius: 20px 20px 20px 20px;
+}
+@media all and (max-width: 1024px) {
+    .pomegues {
+        grid-row: 1;
+        grid-column-start: 2;
+    }
 }
 .iles {
     grid-row: 5 / span 2; /*sur 2 lignes à partir de la ligne 5*/
     grid-column-start: 2; /*commence dans la colonne 2*/
     border-radius: 20px 20px 20px 20px;
 }
+@media all and (max-width: 1024px) {
+    .iles {
+        grid-row: 2;
+        grid-column-start: 1;
+    }
+}
 .calanques {
     grid-row: span 6; /*sur 6 lignes*/
     grid-column-start: 3; /*commence dans la colonne 3*/
     border-radius: 20px 20px 20px 20px;
+}
+@media all and (max-width: 1024px) {
+    .calanques {
+        grid-row: 2;
+        grid-column-start: 2;
+    }
 }
 .dame {
     grid-row: span 3; /*sur 3 lignes*/
     grid-column-start: 4; /*commence dans la colonne 4*/
     border-radius: 20px 20px 20px 20px;
 }
+@media all and (max-width: 1024px) {
+    .dame {
+        grid-row: 3;
+        grid-column-start: 1;
+    }
+}
 .longchamps {
     grid-row: 4 / span 3; /*sur 3 lignes à partir de la ligne 4*/
     grid-column-start: 4; /*commence dans la colonne 4*/
     border-radius: 20px 20px 20px 20px;
+}
+@media all and (max-width: 1024px) {
+    .longchamps {
+        grid-row: 3;
+        grid-column-start: 2;
+    }
 }
 /*------------*/
 /*---footer---*/
@@ -825,7 +937,23 @@ footer {
     padding-right: 350px;
     padding-top: 20px;
 }
-@media all and (max-width: 600px) {
+@media all and (max-width: 1024px) {
+    footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        font-size: 18px;
+        margin-top: 20px;
+        margin-left: -50px;
+        margin-right: -50px;
+        padding-bottom: 50px;
+        padding-left: 50px;
+        padding-top: 20px;
+        padding-right: 50px;
+    }
+}
+@media all and (max-width: 700px) {
     footer {
         display: flex;
         flex-direction: column;
