@@ -179,6 +179,7 @@ body {
 .recherche .st {
     margin-top: 10px;
 }
+/*taille du texte au dessus du formulaire de recherche*/
 .st {
     font-size: 16px;
 }
@@ -423,6 +424,7 @@ body {
         width: 100%;
     }
 }
+/*Zone de Hébergements à Marseille*/
 .titres {
     padding-left: 5px;
     padding-right: 5px;
@@ -440,6 +442,7 @@ body {
         margin-left: -10px;
     }
 }
+/*Choix d'hébergements*/
 .selection {
     display: flex;
     flex-direction: row;
@@ -465,6 +468,7 @@ body {
         padding-right: 0;
     }
 }
+/*Légendes des photos*/
 .legendes {
     padding-left: 15px;
 }
@@ -472,15 +476,18 @@ body {
     font-size: 12px;
     padding-top: 8px;
 }
+/*Nom de l'hôtel*/
 .legendes .hotel {
     font-size: 18px;
     padding-top: 10px;
     font-weight: Bold;
 }
+/*Prix*/
 .legendes .tarifs {
     font-size: 14px;
     padding-top: 10px;
 }
+/*Mise en forme des différents choix proposés*/
 .carte {
     border: white solid 5px;
     background-color: white;
@@ -496,6 +503,7 @@ body {
         width: 100%;
     }
 }
+/*Enlève soulignage des liens*/
 .carte a {
     text-decoration: none;
     color:black;
@@ -504,6 +512,7 @@ body {
     font-size: 10px;
     background-size: cover;
 }
+/*Hebergements à Marseille*/
 .titres h2 {
     height: 58px;
     font-size: 22px;
@@ -519,6 +528,7 @@ body {
         line-height: 0;
     }
 }
+/*Afficher plus*/
 .more {
     font-weight: Bold;
     font-size: 18px;
@@ -535,6 +545,7 @@ body {
         padding-left: 0;
     }
 }
+/*Enlève le soulignage des liens*/
 #hebergements a {
     text-decoration: none;
     color: black;
@@ -543,11 +554,11 @@ body {
 /*mise en page des photos d'hébergements*/
 .auberge_la_cannebiere {
     background-image: url("images/hebergements/auberge_la_cannebiere.jpg");
-    background-size: cover;
-    border-radius: 20px 20px 0px 0px;
-    width: 250px;
-    height: 115px;
-    background-position: center;
+    background-size: cover; /*remplis*/
+    border-radius: 20px 20px 0px 0px; /*arrondi bordure*/
+    width: 250px; /*longueur*/
+    height: 115px; /*hauteur*/
+    background-position: center; /*au centre de la carte*/
 }
 .hotel_du_port {
     background-image: url("images/hebergements/hotel_du_port.jpg");
@@ -599,6 +610,7 @@ body {
         width: 100%;
     }
 }
+/*section populaires*/
 #populaires {
     background-color: #f2f2f2;
     border-radius: 20px;
@@ -637,12 +649,14 @@ body {
         row-gap: 20px;
     }
 }
+/*Zone de les plus populaires*/
 .titres_populaires {
     padding-left: 5px;
     padding-right: 40px;
     display: flex;
     justify-content: space-between;
 }
+/*Icone graph*/
 .titres_populaires .icone_populaires {
     margin-right: -30px;
     font-size: 23px;
@@ -650,6 +664,7 @@ body {
     height: 100px;
     line-height: 100px;
 }
+/*Les plus populaires*/
 .titres_populaires h2 {
     height: 25px;
     font-size: 22px;
@@ -669,6 +684,7 @@ body {
     border: 5px solid white;
     box-shadow: 3px 5px 5px #e2e2e2;
 }
+/*Enlève le soulignage des liens*/
 .carte_populaires a {
     text-decoration: none;
     color: black;
@@ -689,17 +705,20 @@ body {
     grid-column-gap: 10px;
     border-radius: 20px 20px 20px 20px;
 }
+/*noms d'hôtels populaires*/
 .choix_populaires .hotel_populaires {
     font-size: 18px;
     padding-top: 11px;
     padding-left: 10px;
     font-weight: bold;
 }
+/*prix*/
 .choix_populaires .tarifs {
     padding-left: 11px;
     font-size: 14px;
     padding-top: 10px;
 }
+/*décalage des étoiles*/
 .choix_populaires .etoiles {
     padding-top: 45px;
     font-size: 11px;
@@ -749,6 +768,7 @@ body {
         margin-right: 10px;
     }
 }
+/*Activités*/
 #activite h2 {
     height: 58px;
     font-size: 22px;
@@ -761,6 +781,7 @@ body {
         margin-left: 10px;
     }
 }
+/*Enlève le soulignage des liens*/
 #activite a {
     text-decoration: none;
     color: black;
@@ -1012,6 +1033,7 @@ footer {
     }
 }
 @media all and (max-width: 700px) {
+    /*En colonne sur mobile*/
     footer {
         display: flex;
         flex-direction: column;
