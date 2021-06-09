@@ -200,6 +200,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer; /*permet d'avoir le curseur de la souris en forme de main sur le bouton de recherche*/
 }
 .formulaire {
     height: 50px;
