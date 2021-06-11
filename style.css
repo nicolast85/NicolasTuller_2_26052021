@@ -1,18 +1,18 @@
 @font-face {
     font-family: 'Raleway';
-    src: url('Raleway_Regular.ttf');
+    src: url('fonts/Raleway_Regular.ttf');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'Raleway';
-    src: url('Raleway_Bold.ttf');
+    src: url('fonts/Raleway_Bold.ttf');
     font-weight: bold;
     font-size: normal;
 }
 @font-face {
     font-family: 'Raleway';
-    src: url('Raleway_SemiBold.ttf');
+    src: url('fonts/Raleway_SemiBold.ttf');
     font-weight: 600;
     font-size: normal;
 }
@@ -73,7 +73,7 @@ body {
     padding-top: 45px;
     display: flex;
     margin-right: 60px;
-    gap: 60px;
+    gap: 30px;
 }
 @media all and (max-width: 700px) {
     /*bordure bot pour le menu sur mobile*/
@@ -86,51 +86,48 @@ body {
         padding-top: 0;
     }
 }
-#menu div a {
-    text-decoration: none;
-    color: #000;
-    font-size: 17px;
-    font-weight: 600;
-}
 @media all and (max-width: 700px) {
-    /*mobile*/
-    #menu div a {
-        font-size: 15px;
-    }
-}
-/*bordure top au survole du menu*/
-#menu div :hover {
-    border-top: #0065fc solid 2px;
-    color: #0065fc;
-    padding-top: 42px;
-    align-items: center;
-}
-@media all and (max-width: 700px) {
-    /*bordure bot au survole du menu sur mobile*/
-    #menu :hover {
-        border-bottom: #0065fc solid 3px;   
-    }
-}
-@media all and (max-width: 700px) {
-    /*retrait bordure top sur mobile*/
-    #menu div :hover {
-        border-top: none;
-        padding-top: 0;
-    }
-}
-@media all and (max-width: 700px) {
-    /*retrait bordure bot des liens du menu sur mobile*/
-    #menu a:hover {
-        border-bottom: none;
-    }
-}
-@media all and (max-width: 700px) {
-    #menu div {
+    #menu .menu_hebergements,
+    #menu .menu_activite {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
         height: 100%;
+    }
+}
+@media all and (max-width: 700px) {
+    /*bordure bot bleu pour hébergements sur mobile*/
+    #menu .menu_hebergements {
+        border-bottom: #0065fc solid 3px;
+    }
+}
+.menu_hebergements a {
+    color: #0065fc;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+    border-top: #0065fc solid 2px; /*bordure top pour hébergement*/
+    padding: 42px;
+    align-items: center;
+}
+@media all and (max-width: 700px) {
+    /*disparition de la bordure top sur mobile*/
+    .menu_hebergements a {
+        font-size: 15px;
+        border-top: none;
+    }
+}
+.menu_activite a {
+    color: #000;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+}
+@media all and (max-width: 700px) {
+    /*mobile*/
+    .menu_activite a {
+        font-size: 15px;
     }
 }
 #inscription {
@@ -243,7 +240,7 @@ body {
         border-radius: 12px;
         border: none;
         font-size: 0;
-        background: url("images/logo/icone_search.png") center no-repeat;
+        background: url("images/logo/icon_search.png") center no-repeat;
         background-color: #0065fc;
         background-size: 50px;
         margin-left: -10px;
